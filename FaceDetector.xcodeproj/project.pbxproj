@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D068167722642F4500A6C31D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D068167622642F4500A6C31D /* AppDelegate.m */; };
+		D068167A22642F4500A6C31D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D068167922642F4500A6C31D /* ViewController.m */; };
+		D068167C22642F4600A6C31D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D068167B22642F4600A6C31D /* Assets.xcassets */; };
+		D068167F22642F4600A6C31D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D068167D22642F4600A6C31D /* Main.storyboard */; };
+		D068168222642F4600A6C31D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D068168122642F4600A6C31D /* main.m */; };
+		D068168D22642F4600A6C31D /* FaceDetectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D068168C22642F4600A6C31D /* FaceDetectorTests.m */; };
+		D068169822642F4600A6C31D /* FaceDetectorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D068169722642F4600A6C31D /* FaceDetectorUITests.m */; };
+		D06816B022642F9800A6C31D /* MacCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D06816A522642F9800A6C31D /* MacCamera.m */; };
+		D06816B122642F9800A6C31D /* FaceDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = D06816A722642F9800A6C31D /* FaceDetector.m */; };
+		D06816B222642F9800A6C31D /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06816A822642F9800A6C31D /* PictureViewController.m */; };
+		D06816B322642F9800A6C31D /* MacCameraManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D06816A922642F9800A6C31D /* MacCameraManager.m */; };
+		D06816B422642F9800A6C31D /* UVCCameraControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D06816AB22642F9800A6C31D /* UVCCameraControl.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D068168922642F4600A6C31D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D068166A22642F4500A6C31D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D068167122642F4500A6C31D;
+			remoteInfo = FaceDetector;
+		};
+		D068169422642F4600A6C31D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D068166A22642F4500A6C31D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D068167122642F4500A6C31D;
+			remoteInfo = FaceDetector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D068167222642F4500A6C31D /* FaceDetector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D068167522642F4500A6C31D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D068167622642F4500A6C31D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D068167822642F4500A6C31D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D068167922642F4500A6C31D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D068167B22642F4600A6C31D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D068167E22642F4600A6C31D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D068168022642F4600A6C31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D068168122642F4600A6C31D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D068168322642F4600A6C31D /* FaceDetector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FaceDetector.entitlements; sourceTree = "<group>"; };
+		D068168822642F4600A6C31D /* FaceDetectorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D068168C22642F4600A6C31D /* FaceDetectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceDetectorTests.m; sourceTree = "<group>"; };
+		D068168E22642F4600A6C31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D068169322642F4600A6C31D /* FaceDetectorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FaceDetectorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D068169722642F4600A6C31D /* FaceDetectorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FaceDetectorUITests.m; sourceTree = "<group>"; };
+		D068169922642F4600A6C31D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D06816A522642F9800A6C31D /* MacCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacCamera.m; sourceTree = "<group>"; };
+		D06816A622642F9800A6C31D /* DLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DLog.h; sourceTree = "<group>"; };
+		D06816A722642F9800A6C31D /* FaceDetector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceDetector.m; sourceTree = "<group>"; };
+		D06816A822642F9800A6C31D /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		D06816A922642F9800A6C31D /* MacCameraManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacCameraManager.m; sourceTree = "<group>"; };
+		D06816AA22642F9800A6C31D /* UVCCameraControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UVCCameraControl.h; sourceTree = "<group>"; };
+		D06816AB22642F9800A6C31D /* UVCCameraControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UVCCameraControl.m; sourceTree = "<group>"; };
+		D06816AC22642F9800A6C31D /* MacCameraManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacCameraManager.h; sourceTree = "<group>"; };
+		D06816AD22642F9800A6C31D /* MacCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacCamera.h; sourceTree = "<group>"; };
+		D06816AE22642F9800A6C31D /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		D06816AF22642F9800A6C31D /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D068166F22642F4500A6C31D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D068168522642F4600A6C31D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D068169022642F4600A6C31D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D068166922642F4500A6C31D = {
+			isa = PBXGroup;
+			children = (
+				D068167422642F4500A6C31D /* FaceDetector */,
+				D068168B22642F4600A6C31D /* FaceDetectorTests */,
+				D068169622642F4600A6C31D /* FaceDetectorUITests */,
+				D068167322642F4500A6C31D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D068167322642F4500A6C31D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D068167222642F4500A6C31D /* FaceDetector.app */,
+				D068168822642F4600A6C31D /* FaceDetectorTests.xctest */,
+				D068169322642F4600A6C31D /* FaceDetectorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D068167422642F4500A6C31D /* FaceDetector */ = {
+			isa = PBXGroup;
+			children = (
+				D06816B522642F9F00A6C31D /* MacCamera */,
+				D06816A622642F9800A6C31D /* DLog.h */,
+				D06816AF22642F9800A6C31D /* FaceDetector.h */,
+				D06816A722642F9800A6C31D /* FaceDetector.m */,
+				D06816AE22642F9800A6C31D /* PictureViewController.h */,
+				D06816A822642F9800A6C31D /* PictureViewController.m */,
+				D068167522642F4500A6C31D /* AppDelegate.h */,
+				D068167622642F4500A6C31D /* AppDelegate.m */,
+				D068167822642F4500A6C31D /* ViewController.h */,
+				D068167922642F4500A6C31D /* ViewController.m */,
+				D068167B22642F4600A6C31D /* Assets.xcassets */,
+				D068167D22642F4600A6C31D /* Main.storyboard */,
+				D068168022642F4600A6C31D /* Info.plist */,
+				D068168122642F4600A6C31D /* main.m */,
+				D068168322642F4600A6C31D /* FaceDetector.entitlements */,
+			);
+			path = FaceDetector;
+			sourceTree = "<group>";
+		};
+		D068168B22642F4600A6C31D /* FaceDetectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				D068168C22642F4600A6C31D /* FaceDetectorTests.m */,
+				D068168E22642F4600A6C31D /* Info.plist */,
+			);
+			path = FaceDetectorTests;
+			sourceTree = "<group>";
+		};
+		D068169622642F4600A6C31D /* FaceDetectorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D068169722642F4600A6C31D /* FaceDetectorUITests.m */,
+				D068169922642F4600A6C31D /* Info.plist */,
+			);
+			path = FaceDetectorUITests;
+			sourceTree = "<group>";
+		};
+		D06816B522642F9F00A6C31D /* MacCamera */ = {
+			isa = PBXGroup;
+			children = (
+				D06816AD22642F9800A6C31D /* MacCamera.h */,
+				D06816A522642F9800A6C31D /* MacCamera.m */,
+				D06816AC22642F9800A6C31D /* MacCameraManager.h */,
+				D06816A922642F9800A6C31D /* MacCameraManager.m */,
+				D06816AA22642F9800A6C31D /* UVCCameraControl.h */,
+				D06816AB22642F9800A6C31D /* UVCCameraControl.m */,
+			);
+			path = MacCamera;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D068167122642F4500A6C31D /* FaceDetector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D068169C22642F4600A6C31D /* Build configuration list for PBXNativeTarget "FaceDetector" */;
+			buildPhases = (
+				D068166E22642F4500A6C31D /* Sources */,
+				D068166F22642F4500A6C31D /* Frameworks */,
+				D068167022642F4500A6C31D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceDetector;
+			productName = FaceDetector;
+			productReference = D068167222642F4500A6C31D /* FaceDetector.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D068168722642F4600A6C31D /* FaceDetectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D068169F22642F4600A6C31D /* Build configuration list for PBXNativeTarget "FaceDetectorTests" */;
+			buildPhases = (
+				D068168422642F4600A6C31D /* Sources */,
+				D068168522642F4600A6C31D /* Frameworks */,
+				D068168622642F4600A6C31D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D068168A22642F4600A6C31D /* PBXTargetDependency */,
+			);
+			name = FaceDetectorTests;
+			productName = FaceDetectorTests;
+			productReference = D068168822642F4600A6C31D /* FaceDetectorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D068169222642F4600A6C31D /* FaceDetectorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06816A222642F4600A6C31D /* Build configuration list for PBXNativeTarget "FaceDetectorUITests" */;
+			buildPhases = (
+				D068168F22642F4600A6C31D /* Sources */,
+				D068169022642F4600A6C31D /* Frameworks */,
+				D068169122642F4600A6C31D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D068169522642F4600A6C31D /* PBXTargetDependency */,
+			);
+			name = FaceDetectorUITests;
+			productName = FaceDetectorUITests;
+			productReference = D068169322642F4600A6C31D /* FaceDetectorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D068166A22642F4500A6C31D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = boyinfocus;
+				TargetAttributes = {
+					D068167122642F4500A6C31D = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					D068168722642F4600A6C31D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = D068167122642F4500A6C31D;
+					};
+					D068169222642F4600A6C31D = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = D068167122642F4500A6C31D;
+					};
+				};
+			};
+			buildConfigurationList = D068166D22642F4500A6C31D /* Build configuration list for PBXProject "FaceDetector" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D068166922642F4500A6C31D;
+			productRefGroup = D068167322642F4500A6C31D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D068167122642F4500A6C31D /* FaceDetector */,
+				D068168722642F4600A6C31D /* FaceDetectorTests */,
+				D068169222642F4600A6C31D /* FaceDetectorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D068167022642F4500A6C31D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D068167C22642F4600A6C31D /* Assets.xcassets in Resources */,
+				D068167F22642F4600A6C31D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D068168622642F4600A6C31D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D068169122642F4600A6C31D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D068166E22642F4500A6C31D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06816B022642F9800A6C31D /* MacCamera.m in Sources */,
+				D06816B322642F9800A6C31D /* MacCameraManager.m in Sources */,
+				D06816B222642F9800A6C31D /* PictureViewController.m in Sources */,
+				D068167A22642F4500A6C31D /* ViewController.m in Sources */,
+				D068168222642F4600A6C31D /* main.m in Sources */,
+				D06816B422642F9800A6C31D /* UVCCameraControl.m in Sources */,
+				D068167722642F4500A6C31D /* AppDelegate.m in Sources */,
+				D06816B122642F9800A6C31D /* FaceDetector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D068168422642F4600A6C31D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D068168D22642F4600A6C31D /* FaceDetectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D068168F22642F4600A6C31D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D068169822642F4600A6C31D /* FaceDetectorUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D068168A22642F4600A6C31D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D068167122642F4500A6C31D /* FaceDetector */;
+			targetProxy = D068168922642F4600A6C31D /* PBXContainerItemProxy */;
+		};
+		D068169522642F4600A6C31D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D068167122642F4500A6C31D /* FaceDetector */;
+			targetProxy = D068169422642F4600A6C31D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D068167D22642F4600A6C31D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D068167E22642F4600A6C31D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D068169A22642F4600A6C31D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		D068169B22642F4600A6C31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D068169D22642F4600A6C31D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FaceDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyinfocus.FaceDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D068169E22642F4600A6C31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FaceDetector/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyinfocus.FaceDetector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D06816A022642F4600A6C31D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FaceDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyinfocus.FaceDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceDetector.app/Contents/MacOS/FaceDetector";
+			};
+			name = Debug;
+		};
+		D06816A122642F4600A6C31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FaceDetectorTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyinfocus.FaceDetectorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FaceDetector.app/Contents/MacOS/FaceDetector";
+			};
+			name = Release;
+		};
+		D06816A322642F4600A6C31D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FaceDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyinfocus.FaceDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FaceDetector;
+			};
+			name = Debug;
+		};
+		D06816A422642F4600A6C31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FaceDetectorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boyinfocus.FaceDetectorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = FaceDetector;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D068166D22642F4500A6C31D /* Build configuration list for PBXProject "FaceDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D068169A22642F4600A6C31D /* Debug */,
+				D068169B22642F4600A6C31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D068169C22642F4600A6C31D /* Build configuration list for PBXNativeTarget "FaceDetector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D068169D22642F4600A6C31D /* Debug */,
+				D068169E22642F4600A6C31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D068169F22642F4600A6C31D /* Build configuration list for PBXNativeTarget "FaceDetectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06816A022642F4600A6C31D /* Debug */,
+				D06816A122642F4600A6C31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D06816A222642F4600A6C31D /* Build configuration list for PBXNativeTarget "FaceDetectorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06816A322642F4600A6C31D /* Debug */,
+				D06816A422642F4600A6C31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D068166A22642F4500A6C31D /* Project object */;
+}
